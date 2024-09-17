@@ -1,0 +1,37 @@
+# Análise de Estatísticas da Série A do Campeonato Brasileiro
+
+## Objetivo
+Este projeto visa realizar uma análise descritiva e visual das estatísticas de cinco equipes da Série A do Campeonato Brasileiro, utilizando dados fictícios. A análise envolve a criação de um DataFrame com pandas, a exibição de estatísticas descritivas e a visualização dos dados com gráficos de calor utilizando matplotlib e seaborn.
+
+## Estrutura dos Dados
+Os dados analisados incluem:
+- **Equipe**: Nome do time.
+- **Jogos**: Total de jogos disputados na temporada (38).
+- **Vitórias**: Número de vitórias alcançadas.
+- **Empates**: Quantidade de empates.
+- **Derrotas**: Número de derrotas (fixo em 4).
+- **Gols Marcados**: Total de gols marcados.
+- **Gols Sofridos**: Total de gols sofridos.
+- **Pontos**: Pontuação final na tabela (cada vitória vale 3 pontos e empate vale 1 ponto).
+
+## Criação do DataFrame
+Os dados são armazenados em um DataFrame pandas, e a tabela com as estatísticas das equipes é exibida.
+
+```python
+import pandas as pd
+
+# Dados reais obtidos dos sites fornecidos (substitua pelos dados reais)
+data_real = {
+    'Equipe': ['Flamengo', 'Palmeiras', 'São Paulo', 'Atlético-MG', 'Grêmio'],
+    'Jogos': [38, 38, 38, 38, 38],
+    'Vitórias': [26, 24, 22, 20, 18],
+    'Empates': [8, 10, 12, 14, 16],
+    'Derrotas': [4, 4, 4, 4, 4],
+    'Gols Marcados': [70, 65, 60, 58, 55],
+    'Gols Sofridos': [30, 35, 40, 45, 50],
+    'Pontos': [86, 82, 78, 74, 72]
+}
+
+# Criar DataFrame com dados reais
+df_real = pd.DataFrame(data_real)
+print(df_real.to_string(index=False))
