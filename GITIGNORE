@@ -1,0 +1,23 @@
+
+### `.gitignore`
+
+Aqui está um exemplo básico de `.gitignore` para projetos Python:
+
+Python
+*.pyc *.pyo *.pyd pycache/ *.db *.sqlite3
+
+Jupyter Notebook
+.ipynb_checkpoints/
+
+VS Code
+.vscode/
+
+Environment
+.env venv/ ENV/
+
+Data files
+*.csv *.xlsx *.json
+
+Logs
+
+Você pode ajustar o conteúdo dos arquivos conforme necessário para seu projeto.
